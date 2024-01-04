@@ -1,0 +1,147 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 880px;
+  transition: all 0.3s ease;
+  max-height: 1200px;
+}
+
+.vid{
+  z-index: -1;
+  width: 90%;
+  min-width: 260px;
+}
+
+.title {
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 50%;
+}
+
+.cont {
+  width: 90%;
+  position: relative;
+  display: flex;
+}
+
+.anim {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.name {
+  line-height: 94%;
+  font-size: clamp(120px, 11vw, 500px);
+  display: flex;
+  flex-direction: column;
+  margin-left: -8px;
+  font-weight: 700;
+}
+
+.dev {
+  font-size: clamp(21px, 2vw, 200px);
+  margin-top: 10px;
+  padding-left: 5px;
+  width: 100%;
+  background: linear-gradient(to right, rgb(255, 0, 221), rgb(255, 170, 0));
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.scroll {
+  opacity: 0;
+  border: solid rgb(253, 252, 252) 5px;
+  position: absolute;
+  bottom: 170px;
+}
+
+@media screen and (max-width: 1400px) {
+  .home{
+    min-height: 800px;
+  }
+  .dev {
+    margin-left: -3px;
+  }
+  .scroll {
+    bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home {
+    min-height: 880px;
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    margin-top: 50px;
+    height: 40%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .name {
+    font-size: clamp(120px, 12vw, 280px);
+    transition: all 0.2s ease;
+    align-items: center;
+  }
+  .dev {
+    font-size: 24px;
+    text-align: center;
+  }
+  .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+  }
+  .scroll {
+    bottom: 70px;
+  }
+  .anim{
+    max-height: 500px;
+    height: 40%;
+    justify-content: center;
+    width: 100%;
+  }
+  .vid{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home {
+    min-height: 690px;
+    max-height: 800px;
+  }
+  .name {
+    font-size: 76px;
+    transition: all 0.2s ease;
+  }
+  .dev {
+    margin-left: -5px;
+    font-size: 14px;
+  }
+  .icon {
+    width: 22px;
+  }
+  .iconCont {
+    margin-top: 14px;
+    padding: 0;
+  }
+  .cont {
+    width: 80%;
+  }
+  .scroll {
+    bottom: 90px;
+  }
+}

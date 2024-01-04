@@ -1,0 +1,75 @@
+.navbar {
+  color: #ffffff;
+  width: 100vw;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 1);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  width: 90%;
+  font-weight: 400;
+  font-size: clamp(16px, 1vw, 45px);
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.item{
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+  opacity: .8;
+  position: relative;
+}
+
+
+.item::after {
+  content: "";
+  border-bottom: solid white 1px;
+  width: 0%;
+  height: 20px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50%; /* Posición inicial centrada */
+  transform: translateX(-50%); /* Ajusta para centrar en relación con el elemento padre */
+  transition: width 0.2s ease-in-out;
+  z-index: -1; /* Transición específica para el width */
+}
+
+.item:hover::after {
+  width: 100%; /* Ancho al 100% al hacer hover */
+}
+.item:hover{
+  cursor: pointer;
+  opacity: 1;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Ajusta los valores según tus preferencias */
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .list{
+    width: 82%;
+    font-size: 14px;
+    justify-content: center ;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .list{
+    width: 90%;
+    justify-content: center;
+  }
+}
+
+
