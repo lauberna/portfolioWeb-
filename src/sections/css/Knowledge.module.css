@@ -275,7 +275,7 @@
 
 @media screen and (max-width: 500px) {
   .icons {
-    font-size: 4vw;
+    font-size: 3.8vw;
     margin-top: 10px;
   }
   .tit {
@@ -298,9 +298,9 @@
   }
 
   .card {
-    height: 45px;
+    height: 55px;
     min-height: 20px;
-    width: 80%;
+    width: 76%;
   }
 
   .cardHeader {

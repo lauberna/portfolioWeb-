@@ -117,7 +117,7 @@ a {
     font-size: 35px;
   }
   .card-project {
-    width: 90%;
+    width: 98%;
   }
   .card-project h3 {
     font-size: 22px;
@@ -133,5 +133,8 @@ a {
   }
   .project-tit {
     font-size: 30px;
+  }
+  .card-project {
+    width: 92%;
   }
 }
