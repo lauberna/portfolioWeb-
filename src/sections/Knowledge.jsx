@@ -43,9 +43,6 @@ const Knowledge = () => {
       degree: "Certified Tech developer",
       icons: [
         <IoLogoJavascript />,
-        <FaCss3Alt />,
-        <FaHtml5 />,
-        <RiTeamLine />,
         <FaDatabase />,
         <FaReact />,
         <LuPlus />,
@@ -100,7 +97,7 @@ const Knowledge = () => {
           </div>
         ))}
       </section>
-      <h2 className={s.tittleS}>Experiencia - Estudios</h2>
+      <h2 className={s.tittleS}>Experiencia</h2>
       <section id="experiencia" className={s.study}>
         {data.map((item, index) => (
           <div key={index} className={s.card}>

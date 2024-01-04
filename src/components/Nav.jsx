@@ -15,17 +15,17 @@ function Nav() {
         </li>
         <li className={item}>
           <Link to="about" smooth={true} duration={500} offset={-100}>
-            About
+            Holaaa!
           </Link>
         </li>
         <li className={item}>
           <Link to="experiencia" smooth={true} duration={500} offset={-200}>
-            Experience
+            Experiencia
           </Link>
         </li>
         <li className={item}>
-          <Link to="projects" smooth={true} duration={500}>
-            Projects
+          <Link to="projects" smooth={true} duration={500} offset={-80}>
+            Proyectos
           </Link>
         </li>
       </ul>

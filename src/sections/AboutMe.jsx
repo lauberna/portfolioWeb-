@@ -34,8 +34,7 @@ const AboutMe = () => {
           <h2 className="titulo">Holaaaa!</h2>
           <div className="parrafo">
             <p>
-              Soy Laureano Berna, estudiante de programación en la UTN
-              Mendoza y Certified Tech Developer en Digital House, con 21 años
+              Soy Laureano Berna, estudiante de programación con 21 años
               de edad. A lo largo de mi vida, mi fascinación por la tecnología
               ha evolucionado, llevándome al emocionante mundo del desarrollo
               web, donde actualmente me desenvuelvo con entusiasmo.

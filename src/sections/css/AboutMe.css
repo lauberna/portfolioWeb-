@@ -51,7 +51,7 @@
   gap: 15px;
 }
 .parrafo {
-  text-align: justify;
+  text-align: left;
   line-height: 130%;
   width: 100%;
   font-size: 21px;
@@ -74,7 +74,7 @@
     height: 100%;
     max-height: initial;
     background-position: 300% 99%;
-    background-size: 300%;
+    background-size: 380%;
   }
 
   .descripcion {
@@ -104,6 +104,7 @@
   }
 
   .parrafo {
+    text-align: center;
     width: 100%;
     font-size: 20px;
   }

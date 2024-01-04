@@ -18,9 +18,9 @@ const Welcome = () => {
         <div className={title}>
           <div className={name}>
             <span>LAU</span>
-            <span>BERNA.</span>
+            <span>BERNA</span>
           </div>
-          <p className={dev}> Desarrollador Front End Junnior</p>
+          <p className={dev}> Desarrollador Front End Junior</p>
           <Media/>
         </div>
         <div className={anim}>
