@@ -88,7 +88,7 @@
   color: transparent;
   background-position: 120% 50%;
   font-size: 23px;
-  width: 80%;
+  width: 70%;
   transition: color 0.1s ease-in-out;
 }
 
@@ -275,7 +275,7 @@
 
 @media screen and (max-width: 500px) {
   .icons {
-    font-size: 4.2vw;
+    font-size: 4vw;
     margin-top: 10px;
   }
   .tit {
