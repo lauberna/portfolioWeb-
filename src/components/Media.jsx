@@ -16,7 +16,7 @@ const Media = () => {
       <a href="https://github.com/lauberna" target="_blank" rel="noopener noreferrer">
         <FaGithub className="icon" />
       </a>
-      <a href="https://w.app/lauberna" target="_blank" rel="noopener noreferrer">
+      <a href="https://walink.co/39dbe9" target="_blank" rel="noopener noreferrer">
         <FaWhatsapp className="icon" />
       </a>
       <a href="mailto:bernalaureano2002@gmail.com" target="_blank" rel="noopener noreferrer">
