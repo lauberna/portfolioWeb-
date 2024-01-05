@@ -1,9 +1,15 @@
-import React, { useEffect, useState } from 'react'
-
+import React, { useEffect, useState } from "react";
 const Hashtag = () => {
-  const textArray = ["Musico", "Deportista", "Estudiante", "Desarrollador"];
+  const textArray = [
+    "Musico",
+    "Deportista",
+    "Estudiante",
+    "Programador",
+    "Dj",
+    "Humano",
+    "Vivo",
+  ];
   const [text, setText] = useState(textArray[0]);
-
   useEffect(() => {
     const interval = setInterval(() => {
       const currentIndex = textArray.indexOf(text);
@@ -14,9 +20,9 @@ const Hashtag = () => {
     return () => clearInterval(interval);
   }, [text]);
   return (
-    <div style={{marginTop: "px", fontSize: "20px", fontWeight: 700}}># {text}</div>
-  )
-
-}
-
-export default Hashtag
+    <div style={{ marginTop: "px", fontSize: "20px", fontWeight: 700 }}>
+      # {text}
+    </div>
+  );
+};
+export default Hashtag;

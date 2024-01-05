@@ -7,7 +7,6 @@
   justify-content: center;
   gap: 40px;
 }
-
 .upper-f{
   display: flex;
   justify-content: center;
@@ -15,7 +14,6 @@
   align-items: center;
   gap: 30px;
 }
-
 .line-f{
   width: 20%;
   height: 3px;
@@ -23,23 +21,16 @@
   background-repeat: repeat-x;
   background-position: 0 80%;
 }
-
-.mid-f{
-  color: white;
-}
-
 .down-f{
   color: white;
   font-size: clamp(15px, 1vw, 50px);
   display: flex;
   gap: 20px;
 }
-
 .down-f a{
   border-bottom: solid 1px;
   transition: all .2s ease-in-out;
 }
-
 .down-f a:hover{
   color: rgb(255, 0, 111);
   cursor: pointer;

@@ -1,31 +1,22 @@
-import {
-  title,
-  dev,
-  home,
-  name,
-  cont,
-  anim,
-  vid
-} from "./css/Welcome.module.css";
-
+import s from "./css/Welcome.module.css";
 import React from "react";
 import Media from "../components/media";
 
 const Welcome = () => {
   return (
-    <section id="home" className={home}>
-      <div className={cont}>
-        <div className={title}>
-          <div className={name}>
+    <section id="home" className={s.home}>
+      <div className={s.cont}>
+        <div className={s.title}>
+          <div className={s.name}>
             <span>LAU</span>
             <span>BERNA</span>
           </div>
-          <p className={dev}> Desarrollador Front End Junior</p>
+          <p className={s.dev}>Estudiante desarrollador Front End</p>
           <Media/>
         </div>
-        <div className={anim}>
-          <video className={vid} autoPlay loop muted playsInline preload="auto">
-            <source src="/bubble.mp4"  />
+        <div className={s.anim}>
+          <video className={s.vid} autoPlay loop muted playsInline preload="auto">
+            <source src="/bubble.webm"  />
           </video>
         </div>
       </div>

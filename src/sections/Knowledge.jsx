@@ -7,22 +7,16 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 import { IoLogoJavascript, IoSunnyOutline } from "react-icons/io5";
-import { GrMysql } from "react-icons/gr";
-
+import { SiPostman, SiSpring } from "react-icons/si";
 import { FaComputer } from "react-icons/fa6";
 import { SlChemistry } from "react-icons/sl";
-import { RiTeamLine } from "react-icons/ri";
 import s from "./css/Knowledge.module.css";
-import { SiPostman } from "react-icons/si";
-import { SiSpring } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
 import { PiPlant } from "react-icons/pi";
 import { CiTimer } from "react-icons/ci";
 import { LuPlus } from "react-icons/lu";
 import { BiMath } from "react-icons/bi";
-
-import "./css/technologies.css";
 import React from "react";
-
 const Knowledge = () => {
   console.log(s);
   const data = [
@@ -41,12 +35,7 @@ const Knowledge = () => {
     {
       school: "DIGITAL HOUSE",
       degree: "Certified Tech developer",
-      icons: [
-        <IoLogoJavascript />,
-        <FaDatabase />,
-        <FaReact />,
-        <LuPlus />,
-      ],
+      icons: [<IoLogoJavascript />, <FaDatabase />, <FaReact />, <LuPlus />],
       time: "2022 - 2025",
     },
     {
@@ -76,14 +65,13 @@ const Knowledge = () => {
       ],
     },
   ];
-
   return (
-    <div className={s.container}>
+    <section className={s.container}>
       <h2 className={s.tittleS}>Tecnologias</h2>
-      <section className={s.skills}>
+      <article className={s.skills}>
         {skillsData.map((category, index) => (
           <div key={index} className={s.skillCont}>
-            <h4 className={s.skillstype}>{category.type}</h4>
+            <h3 className={s.skillstype}>{category.type}</h3>
             <div className={s.cardSkills}>
               <div className={s.skillIcons}>
                 {category.skills.map((skill, skillIndex) => (
@@ -96,16 +84,16 @@ const Knowledge = () => {
             </div>
           </div>
         ))}
-      </section>
+      </article>
       <h2 className={s.tittleS}>Experiencia</h2>
-      <section id="experiencia" className={s.study}>
+      <article id="estudio" className={s.study}>
         {data.map((item, index) => (
           <div key={index} className={s.card}>
             <header className={s.cardHeader}>
               <h3 className={s.title}>{item.school}</h3>
               <div className={s.icons}>
                 {item.icons.map((ic, index) => {
-                  return <div key={index}>{ic}</div>;
+                  return <React.Fragment key={index}>{ic}</React.Fragment>;
                 })}
               </div>
             </header>
@@ -118,8 +106,8 @@ const Knowledge = () => {
             </section>
           </div>
         ))}
-      </section>
-    </div>
+      </article>
+    </section>
   );
 };
 

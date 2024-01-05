@@ -21,7 +21,6 @@
   gap: 1px;
   flex-wrap: nowrap;
 }
-
 .technologies ul li {
   color: inherit;
   position: relative;
@@ -29,7 +28,6 @@
   width: clamp(60px, 5vw, 70px);
   z-index: 1;
 }
-
 .technologies ul li .icon-cont {
   color: white;
   position: relative;
@@ -40,7 +38,6 @@
   width: 100%;
   text-align: center;
 }
-
 .technologies ul li .icon-cont .icon {
   opacity: .8;
   position: relative;
@@ -49,7 +46,6 @@
   text-align: center;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-
 .technologies ul li .icon-cont .text {
   color: inherit;
   position: absolute;
@@ -61,7 +57,6 @@
   opacity: 0;
   transform: translateY(20px);
 }
-
 @media screen and (min-width: 500px) {
   .technologies ul li:hover .icon-cont .icon {
     transform: translateY(-50px);

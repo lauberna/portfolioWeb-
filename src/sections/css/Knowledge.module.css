@@ -6,7 +6,6 @@
   width: 100%;
   margin-top: 20px;
 }
-
 .study {
   width: 90%;
   display: flex;
@@ -17,14 +16,12 @@
   margin-top: clamp(30px, 3vw, 50px);
   margin-bottom: clamp(30px, 3vw, 50px);
 }
-
 .tittleS {
   text-align: center;
   font-size: 45px;
   color: rgb(254, 254, 254);
   height: fit-content;
 }
-
 .card {
   height: 90px;
   position: relative;
@@ -39,7 +36,6 @@
   overflow: hidden;
   justify-content: space-between;
 }
-
 .card::after {
   opacity: 0;
   z-index: -3;
@@ -55,24 +51,19 @@
   background-position: 300% 99%;
   background-size: 150%;
 }
-
 .card:hover {
   transform: scale(1.02);
 }
-
 .card:hover .title {
   color: white;
 }
-
 .card:hover::after {
   opacity: 1;
 }
-
 .card:hover .line {
   opacity: 1;
   width: 35%;
 }
-
 .cardHeader {
   height: 80px;
   width: 40%;
@@ -81,7 +72,6 @@
   justify-content: center;
   align-items: flex-start;
 }
-
 .title {
   background: linear-gradient(to right, rgb(221, 0, 255), rgb(253, 152, 0));
   background-clip: text;
@@ -91,7 +81,6 @@
   width: 70%;
   transition: color 0.1s ease-in-out;
 }
-
 .icons {
   margin-top: 15px;
   display: flex;
@@ -102,7 +91,6 @@
   color: white;
   opacity: 0.7;
 }
-
 .line {
   border-bottom: solid rgb(255, 255, 255) 1px;
   width: 20%;
@@ -113,7 +101,6 @@
   transition: all 0.2s ease-in-out;
   opacity: 0.7;
 }
-
 .info {
   height: 130px;
   color: white;
@@ -124,18 +111,15 @@
   align-items: flex-end;
   width: 40%;
 }
-
 .card:hover .tit {
   color: white;
 }
-
 .tit {
   width: 75%;
   color: rgba(255, 255, 255, 0.681);
   font-size: 20px;
   text-align: right;
 }
-
 .time {
   margin-top: 8px;
   display: flex;
@@ -145,7 +129,6 @@
   color: white;
   opacity: 0.7;
 }
-
 .cardSkills {
   position: relative;
   border-radius: 20px;
@@ -157,7 +140,6 @@
   overflow: hidden;
   transition: all .2s ease-in-out;
 }
-
 .cardSkills::after {
   opacity: 0;
   z-index: -3;
@@ -173,16 +155,12 @@
   background-position: 300% 99%;
   background-size: 150%;
 }
-
 .cardSkills:hover {
   transform: scale(1.02);
 }
-
-
 .cardSkills:hover::after {
   opacity: 1;
 }
-
 .skills{
   width: 90%;
   display: flex;
@@ -206,9 +184,7 @@
   color: rgba(255, 255, 255, 0.622);
   font-size: 18px;
   margin-bottom: 15px;
-
 }
-
 .skillIcons{
   gap: 50px;
   width: 100%;
@@ -235,20 +211,16 @@
   .tit {
     font-size: 16px;
   }
-
   .time {
     font-size: 15px;
   }
-
   .title {
     font-size: 19px;
   }
-
   .card:hover .line {
     opacity: 1;
     width: 28%;
   }
-
   .tittleS {
     font-size: 35px;
   }
@@ -260,7 +232,6 @@
     font-size: 12px;
   }
 }
-
 @media screen and (max-width: 1400px) {
   .card {
     width: 90%;
@@ -272,7 +243,6 @@
     font-size: 14px;
   }
 }
-
 @media screen and (max-width: 500px) {
   .icons {
     font-size: 3.8vw;
@@ -281,37 +251,30 @@
   .tit {
     font-size: 12px;
   }
-
   .time {
     font-size: 10px;
   }
-
   .title {
     width: 100%;
     font-size: 16px;
   }
-
   .info {
     justify-content: center;
     gap: 0px;
     width: 50%;
   }
-
   .card {
     height: 55px;
     min-height: 20px;
     width: 76%;
   }
-
   .cardHeader {
     justify-content: center;
     width: 50%;
   }
-
   .line {
     display: none;
   }
-
   .tittleS {
     font-size: 30px;
   }
@@ -327,7 +290,5 @@
   .cardSkills::after {
     background-position: 0 99%;
     background-size: 220%;
-
   }
-  
 }

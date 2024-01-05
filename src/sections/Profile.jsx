@@ -1,18 +1,13 @@
-import AboutMe from './AboutMe';
-import Knowledge from './Knowledge';
-import Projects from './Projects';
-
+import Knowledge from "./Knowledge";
+import Projects from "./Projects";
+import AboutMe from "./AboutMe";
 const Profile = () => {
-
   return (
-    <div>
-      <AboutMe/>
-      <Knowledge/>
-      <Projects/>
-    </div>
+    <>
+      <AboutMe />
+      <Knowledge />
+      <Projects />
+    </>
   );
 };
-
-
-
 export default Profile;

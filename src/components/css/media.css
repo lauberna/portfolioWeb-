@@ -5,12 +5,10 @@
   transition: transform 0.1s ease-in-out;
   min-width: 30px;
 }
-
 .icon:hover {
   transform: scale(1.2);
   opacity: 1;
 }
-
 .iconCont {
   gap: 12px;
   display: flex;
@@ -18,7 +16,6 @@
   justify-content: flex-start;
   align-items: center;
 }
-
 a{
   text-decoration: none;
   color: white;

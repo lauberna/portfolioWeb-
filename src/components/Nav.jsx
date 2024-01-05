@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { navbar, list, item } from "./css/nav.module.css";
-
 function Nav() {
-  const offsetValue = -150; // Ajusta este valor según sea necesario
-
   return (
-    <div className={navbar}>
+    <section className={navbar}>
       <ul className={list}>
         <li className={item}>
           <Link to="home" smooth={true} duration={500}>
-            Home
+            Inicio
           </Link>
         </li>
         <li className={item}>
@@ -19,8 +16,8 @@ function Nav() {
           </Link>
         </li>
         <li className={item}>
-          <Link to="experiencia" smooth={true} duration={500} offset={-200}>
-            Experiencia
+          <Link to="estudio" smooth={true} duration={500} offset={-200}>
+            Estudios
           </Link>
         </li>
         <li className={item}>
@@ -29,8 +26,7 @@ function Nav() {
           </Link>
         </li>
       </ul>
-    </div>
+    </section>
   );
 }
-
 export default Nav;

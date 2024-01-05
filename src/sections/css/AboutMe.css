@@ -12,12 +12,10 @@
   overflow: hidden;
   margin-bottom: clamp(30px, 3vw, 51px);
 }
-
 .profile,
 .descripcion {
   padding: 20px;
 }
-
 .profile {
   display: flex;
   justify-content: center;
@@ -26,12 +24,10 @@
   min-width: 380px;
   max-width: 450px;
 }
-
 .profilePic {
   width: 100%;
   border-radius: 30px;
 }
-
 .descripcion {
   font-size: 20px;
   width: 50%;
@@ -39,7 +35,6 @@
   font-weight: 400;
   padding: 30px;
 }
-
 .desCont {
   min-width: 300px;
   justify-content: center;
@@ -59,24 +54,20 @@
   flex-direction: column;
   gap: 15px;
 }
-
 .titulo {
   font-size: 45px;
 }
-
 @media screen and (max-width: 1000px) {
   .about {
     gap: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    height: 100%;
+    height: initial;
     max-height: initial;
     background-position: 300% 99%;
     background-size: 380%;
   }
-
   .descripcion {
     padding: 0px 0;
     width: 100%;
@@ -85,54 +76,44 @@
     align-items: flex-start;
     height: 100%;
   }
-
   .desCont {
     justify-content: center;
     align-items: center;
     width: 90%;
     padding-bottom: 30px;
   }
-
   .profile {
     display: flex;
     align-items: flex-end;
     padding: 30px;
   }
-
   .profilePic {
     width: 70%;
   }
-
   .parrafo {
     text-align: center;
     width: 100%;
     font-size: 20px;
   }
-
   .titulo {
     font-size: 35px;
   }
 }
-
 @media screen and (max-width: 500px) {
   .desCont {
     width: 80%;
   }
-
   .titulo {
     font-size: 30px;
   }
-
   .parrafo {
     width: 100%;
     font-size: clamp(15px, 2.6vw, 20px);
   }
-
   .profilePic {
     width: 60%;
   }
 }
-
 @media screen and (max-width: 350px) {
   .desCont {
     width: 80%;

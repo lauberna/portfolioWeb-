@@ -9,20 +9,22 @@ const Projects = () => {
     {
       id: 1,
       title: "Portfolio web",
-      imageSrc: "/portfolio.png",
+      imageSrc: "/portfolio.webp",
       icons: [
         <FaReact className="ic" />,
         <FaCss3Alt className="ic" />,
         <SiVite className="ic" />,
       ],
       hover: true,
+      alt: "screenshot portfolio web"
     },
     {
       id: 2,
       title: "Proximamente",
-      imageSrc: "/proximamente.jpg",
+      imageSrc: "/proximamente.webp",
       icons: [],
       hover: false,
+      alt: "foto de proximamente"
     },
   ];
   return (
@@ -31,13 +33,18 @@ const Projects = () => {
       <div className="contenedor">
         {projects.map((project) => (
           <a
-            href={project.hover ? "#" : undefined}
+            href={project.hover ? "/" : undefined}
             key={project.id}
             className={`card-project ${project.hover ? "hover-card" : ""}`}
           >
             <div className="project-image">
               <HiExternalLink className="go" />
-              <img className="im" src={project.imageSrc} alt={project.title} />
+              <img
+                loading="lazy"
+                className="im"
+                src={project.imageSrc}
+                alt={project.alt}
+              />
             </div>
             <div className="project-descrip">
               <h3>{project.title}</h3>
