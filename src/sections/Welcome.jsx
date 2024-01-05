@@ -16,7 +16,7 @@ const Welcome = () => {
         </div>
         <div className={s.anim}>
           <video className={s.vid} autoPlay loop muted playsInline preload="auto">
-            <source src="/bubble.webm"  />
+            <source src="/bubble.mp4"  />
           </video>
         </div>
       </div>
