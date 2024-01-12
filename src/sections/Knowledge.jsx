@@ -85,7 +85,7 @@ const Knowledge = () => {
           </div>
         ))}
       </article>
-      <h2 className={s.tittleS}>Experiencia</h2>
+      <h2 className={s.tittleS}>Estudios</h2>
       <article id="estudio" className={s.study}>
         {data.map((item, index) => (
           <div key={index} className={s.card}>
